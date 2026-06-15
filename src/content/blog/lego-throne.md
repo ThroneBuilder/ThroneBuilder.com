@@ -8,11 +8,95 @@ coverImage: "/images/LegoThroneV3.JPEG"
 
 The Lego Throne is my own creation (MOC) life-sized LEGO rendition of the [Iron Throne](https://en.wikipedia.org/wiki/Iron_Throne_(A_Song_of_Ice_and_Fire)) as seen in HBO's [Game of Thrones](https://en.wikipedia.org/wiki/Game_of_Thrones) television series.
 
-# Description
-
 The seat of the throne is 5 wide, 4 high, 4 deep when measured in 16x16 plates with arms reaching 2 plates above the seat and the solid back 3 plates higher than the arms. The top of the rear fan blade extends another 7 high when measured by such plates for a total height approaching 7 feet tall.
 
 The Lego Throne is strong enough to sit on and I collect photos of friends and family doing so.
+
+
+# History
+
+I began the Lego Throne in 2020 as my first significant Lego creation.
+
+## Version 1
+
+<p align="center">
+  <img src="images/lego-throne-v1.png" width="40%" />
+  <img src="images/lego-throne-v1-sitting.png" width="40%" />
+</p>
+
+What I call the first version of the throne was a chair and a bucket of swords. What worked well in that design:
+
+1. **Seat design** - The seat dimensions, pillar construction, and outer plating were strong enough to hold me and persists in the current build.
+2. **Blade design** - The blade design with 2x8 Slope 45 also remains unchanged. 
+3. **Bricklink** - This build forced me to find and leverage [BrickLink.com](http://bricklink.com) to supply bricks at volume.
+
+What didn't work well:
+1. **Blade fan** - This came nowhere close to the aesthetic of the Iron Throne and was the main focus of v2.
+2. **Surface blades** - The blades mounted directly to the plates were too straight for the random angle aesthetic.
+3. **Seat back** - The short, squared out seat back would prove to be insufficient for future blade mounts.
+
+## Version 2
+
+<p align="center">
+  <img src="images/lego-throne-v2.png" width="40%" />
+  <img src="images/lego-throne-v2-reference.png" width="40%" />
+</p>
+
+
+Upon completion of v1, I immediately began a major upgrade to match the aesthetic of the Iron Throne.  This began with finding a reference image and measuring the height and curve of the rear two blade fans. What worked well in that design:
+
+1. **Layered fans** - The two precide top-up blade fans in the rear with more chaotic hilt-up front blades matches the throne aesthetic pretty well.
+2. **Alternating colors** - I chose to alternate layers between Light Bluish Gray and Dark Bluish Gray, rather than mix colors or add additional colors. This unifies each layer and contrasts with neighboring layers.
+3. **Tapered seatback** - I rebuilt the seatback to be taller and tapered to support a mounting curve.
+
+What didn't work well:
+1. **Bare seat** - I focused entirely on the rear blade fan and layering with no consideration for the sides or seat.
+2. **Triangle mounts** - Both rear fans were mounted using bespoke "triangle" mounts with the blade anchored via a technic liftarm pinned to top of the the seatback with another liftarm securing its angle.
+2. **Portability** - This design was difficult move, requiring about four hours for disassembly and another four for reassembly.
+
+## Gallery of Nobles
+
+<p align="center">
+  <img src="images/noblety-jeff.png" width="40%" />
+  <img src="images/noblety-derek.png" width="40%" />
+</p>
+
+I took my first photo of a friend on the throne during his visit in November 2021 and have been collecting photos of friends and family on the throne ever since.
+
+## BrickCon 2024
+
+<p align="center">
+  <img src="images/brickcon2024-throne.png" width="40%" />
+  <img src="images/brickcon2024-back.png" width="40%" />
+</p>
+
+I first exhibited the Lego Throne at BrickCon 2024. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room beyond GBS & town & country.
+
+## BrickCon 2025
+
+<p align="center">
+  <img src="images/brickcon2025-direct.png" width="40%" />
+  <img src="images/brickcon2025-angle.png" width="40%" />
+</p>
+
+I brought throne v2 to BrickCon 2025 with the minor addition of side blades. The biggest change for this event was the addition of the [Faith of the Seven](faith-of-the-seven.md) stained glass window behind the throne. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room.
+
+## Version 3
+
+<p align="center">
+  <img src="images/lego-throne-v3.png" width="40%" />
+  <img src="images/lego-throne-v3-rear.png" width="40%" />
+</p>
+
+Between Deccember 2025 and March 2026, I performed a complete v3 rebuild of the Lego Throne with the primary goal of improving its portability.
+
+1. **Modular seat** - I redesigned the seat to allow the sides and back to be removed with most blades intact to save on assembly time.
+2. **Cube techniques** - I rebuilt the seat and back using perfect 8x8x8 cubes bridged by 8 wide plates, which allowed rapid iteration on the modular design.
+3. **Wall angles** - To increase portability, strength and consistency of the blade fans, I calculated pythagorean triples to remounting the rear two blade fans on fixed angles between technic bricks layered into a wall.
+4. **Buttress blades** - To increase authenticity, I added back the triangle buttresses to the front corners and covered them with random blades.
+
+
+# Design
 
 ## Seat Construction
 
@@ -35,5 +119,3 @@ The frontmost layer of blades on the seatback consists of 3 full blades, tip to 
 The side and buttress blades are a mix of short 1-4 layer tip-up and hilt-up blades in Light and Dark Bluish Gray. All are mounted using a ball joint to allow arbitrary angles.
 
 See video at [LEGO Blade Techniques](https://thronebuilder.com/blog/lego-blade-techniques/).
-
-# History
