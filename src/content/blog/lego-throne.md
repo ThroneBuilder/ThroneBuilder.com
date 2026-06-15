@@ -19,10 +19,10 @@ I began the Lego Throne in 2020 as my first significant Lego creation.
 
 ## Version 1
 
-<p align="center">
-  <img src="/images/lego-throne-v1.png" width="40%" />
-  <img src="/images/lego-throne-v1-sitting.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/lego-throne-v1.png" />
+  <img src="/images/lego-throne-v1-sitting.png" />
+</div>
 
 What I call the first version of the throne was a chair and a bucket of swords. What worked well in that design:
 
@@ -37,10 +37,10 @@ What didn't work well:
 
 ## Version 2
 
-<p align="center">
-  <img src="/images/lego-throne-v2.png" width="40%" />
-  <img src="/images/lego-throne-v2-reference.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/lego-throne-v2.png" />
+  <img src="/images/lego-throne-v2-reference.png" />
+</div>
 
 
 Upon completion of v1, I immediately began a major upgrade to match the aesthetic of the Iron Throne.  This began with finding a reference image and measuring the height and curve of the rear two blade fans. What worked well in that design:
@@ -56,37 +56,37 @@ What didn't work well:
 
 ## Gallery of Nobles
 
-<p align="center">
-  <img src="/images/noblety-jeff.png" width="40%" />
-  <img src="/images/noblety-derek.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/noblety-jeff.png" />
+  <img src="/images/noblety-derek.png" />
+</div>
 
 I took my first photo of a friend on the throne during his visit in November 2021 and have been collecting photos of friends and family on the throne ever since.
 
 ## BrickCon 2024
 
-<p align="center">
-  <img src="/images/brickcon2024-throne.png" width="40%" />
-  <img src="/images/brickcon2024-back.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/brickcon2024-throne.png" />
+  <img src="/images/brickcon2024-back.png" />
+</div>
 
 I first exhibited the Lego Throne at BrickCon 2024. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room beyond GBS & town & country.
 
 ## BrickCon 2025
 
-<p align="center">
-  <img src="/images/brickcon2025-direct.png" width="40%" />
-  <img src="/images/brickcon2025-angle.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/brickcon2025-direct.png" />
+  <img src="/images/brickcon2025-angle.png" />
+</div>
 
 I brought throne v2 to BrickCon 2025 with the minor addition of side blades. The biggest change for this event was the addition of the [Faith of the Seven](faith-of-the-seven.md) stained glass window behind the throne. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room.
 
 ## Version 3
 
-<p align="center">
-  <img src="/images/lego-throne-v3.png" width="40%" />
-  <img src="/images/lego-throne-v3-rear.png" width="40%" />
-</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+  <img src="/images/lego-throne-v3.png" />
+  <img src="/images/lego-throne-v3-rear.png" />
+</div>
 
 Between Deccember 2025 and March 2026, I performed a complete v3 rebuild of the Lego Throne with the primary goal of improving its portability.
 
