@@ -79,7 +79,7 @@ I first exhibited the Lego Throne at BrickCon 2024. You can find it in the [virt
   <img src="/images/brickcon2025-angle.png" />
 </div>
 
-I brought throne v2 to BrickCon 2025 with the minor addition of side blades. The biggest change for this event was the addition of the [Faith of the Seven](faith-of-the-seven.md) stained glass window behind the throne. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room.
+I brought throne v2 to BrickCon 2025 with the minor addition of side blades. The biggest change for this event was the addition of the [Faith of the Seven](https://thronebuilder.com/blog/faith-of-the-seven/) stained glass window behind the throne. You can find it in the [virtual tour](https://afol.brickcon.org/building/#virtual-tour) at the far back of the room.
 
 ## Version 3
 
