@@ -10,3 +10,9 @@ It has four goals:
 
 Source code is here:
 https://github.com/ThroneBuilder/ThroneBuilder
+
+## Build
+
+```
+npm run build
+```

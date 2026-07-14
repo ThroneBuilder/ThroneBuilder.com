@@ -7,3 +7,6 @@ youtubeUrl: "https://youtu.be/Nny9781qyTI"
 tags: ["family"]
 ---
 
+*To kick off Gina’s birthday week, I offer this compilation of our two years together. Happy birthday Gina! Big thanks to Laura Kagel for the inspiration and Laurie McPhee for the use of the record player.*
+
+This video edits together two years of 360 degree and other videos taken during our relationship.
