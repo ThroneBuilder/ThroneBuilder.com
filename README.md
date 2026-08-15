@@ -89,4 +89,4 @@ Render auto-deploys from the `main` branch on GitHub (see [render.yaml](render.y
 
 ## Repository
 
-https://github.com/jeffjames-pnw/ThroneBuilder
+https://github.com/ThroneBuilder/ThroneBuilder.com
