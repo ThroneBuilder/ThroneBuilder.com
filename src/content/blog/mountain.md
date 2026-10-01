@@ -1,5 +1,5 @@
 ---
-title: "Mountain.me"
+title: "Mountain"
 pubDate: 2026-10-01
 description: "Tool for designing LEGO terrain models of real mountains"
 tags: ["legos","coding"]
