@@ -1,0 +1,370 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Mount St Helens — mount-st-helens-20261001T161623</title>
+<style>
+body{font:14px/1.45 system-ui,sans-serif;margin:0;padding:16px 24px;background:#fafafa;color:#1b1b1b}
+h1{margin:.2em 0}h2{margin:1.4em 0 .5em;border-bottom:1px solid #ddd}
+.grid{display:flex;flex-wrap:wrap;gap:16px}.grid figure{margin:0;flex:1 1 360px;max-width:700px}
+figure img{width:100%;image-rendering:pixelated;border:1px solid #ccc;background:#fff}
+figcaption{font-size:12px;color:#555}table{border-collapse:collapse}td,th{padding:3px 10px;border-bottom:1px solid #e5e5e5;text-align:left}
+.ok{color:#11772d}.bad{color:#b00020;font-weight:600}code{font-size:12px}.muted{color:#777}
+</style><script>
+function setGrid(on){document.querySelectorAll('img[data-grid]').forEach(i=>{i.src=on?i.dataset.grid:i.dataset.plain});}
+function pickVariant(k){document.querySelectorAll('.variant').forEach(d=>{d.hidden=d.dataset.key!==k});}
+</script></head><body>
+<h1>Mount St Helens</h1>
+<p class='muted'>run <code>mount-st-helens-20261001T161623</code> · generator 0.1.0+6c8eab4-dirty · catalog lego-1x1-2026-10-01 · status <span class='ok'>complete</span></p>
+<p><label><input type='checkbox' onchange='setGrid(this.checked)'> show 64-stud module grid (A1 = NW)</label> · variant <select onchange='pickVariant(this.value)'><option value='x1.5_sentinel2@2025-08-12_average_diffusion0.10'>x1.5_sentinel2@2025-08-12_average_diffusion0.10</option></select></p>
+<section class='variant' data-key='x1.5_sentinel2@2025-08-12_average_diffusion0.10' >
+<h2>x1.5_sentinel2@2025-08-12_average_diffusion0.10</h2><p>max height 79 plates = 252.8 mm · <a href='viewer.html'>open whole-mountain 3D view</a></p>
+<div class='grid'>
+<figure><img src="./height-x1.5.png" data-plain="./height-x1.5.png" data-grid="./height-x1.5_grid.png" alt="LEGO height (stepped, hillshaded)"><figcaption>LEGO height (stepped, hillshaded)</figcaption></figure>
+<figure><img src="./color-sentinel2@2025-08-12_average_diffusion0.10.png" data-plain="./color-sentinel2@2025-08-12_average_diffusion0.10.png" data-grid="./color-sentinel2@2025-08-12_average_diffusion0.10_grid.png" alt="LEGO colors (1 block = 1 stud)"><figcaption>LEGO colors (1 block = 1 stud)</figcaption></figure>
+<figure><img src="./imagery-sentinel2@2025-08-12.png" data-plain="./imagery-sentinel2@2025-08-12.png" data-grid="./imagery-sentinel2@2025-08-12_grid.png" alt="source imagery (sentinel2@2025-08-12)"><figcaption>source imagery (sentinel2@2025-08-12)</figcaption></figure>
+</div></section>
+<h2>Summary</h2><table><tr><th>footprint</th><td>1536.0 × 1536.0 mm (192 × 192 studs)</td></tr><tr><th>geographic area</th><td>18.00 × 18.00 km, 93.75 m per stud, EPSG:26910</td></tr><tr><th>datum</th><td>529.5 m (raw DEM min 515.6 m)</td></tr><tr><th>summit</th><td>2516.4 m stud-mean at stud [95, 96] (source max 2538.6 m)</td></tr><tr><th>relief above datum</th><td>1986.9 m</td></tr><tr><th>meters per plate (1×)</th><td>37.500</td></tr><tr><th>max height x1.5</th><td>79 plates / 252.8 mm</td></tr></table>
+<details><summary>color distribution — x1.5_sentinel2@2025-08-12_average_diffusion0.10</summary><table><tr><td>LDraw 288</td><td>12897 studs</td></tr><tr><td>LDraw 0</td><td>11416 studs</td></tr><tr><td>LDraw 72</td><td>5506 studs</td></tr><tr><td>LDraw 28</td><td>2977 studs</td></tr><tr><td>LDraw 308</td><td>2426 studs</td></tr><tr><td>LDraw 78</td><td>588 studs</td></tr><tr><td>LDraw 371</td><td>466 studs</td></tr><tr><td>LDraw 15</td><td>163 studs</td></tr><tr><td>LDraw 71</td><td>153 studs</td></tr><tr><td>LDraw 84</td><td>112 studs</td></tr><tr><td>LDraw 70</td><td>56 studs</td></tr><tr><td>LDraw 19</td><td>40 studs</td></tr><tr><td>LDraw 92</td><td>30 studs</td></tr><tr><td>LDraw 80</td><td>13 studs</td></tr><tr><td>LDraw 330</td><td>10 studs</td></tr><tr><td>LDraw 2</td><td>6 studs</td></tr><tr><td>LDraw 484</td><td>3 studs</td></tr><tr><td>LDraw 326</td><td>1 studs</td></tr><tr><td>LDraw 430</td><td>1 studs</td></tr></table></details>
+<h2>Sources</h2><table><tr><th>role</th><th>provider / dataset</th><th>date</th><th>license · attribution</th></tr>
+<tr><td>elevation</td><td>USGS 3DEP<br><span class='muted'>3DEPElevation (Bare Earth DEM Dynamic)</span></td><td>None</td><td>Public domain<br>USGS 3D Elevation Program (3DEP)</td></tr>
+<tr><td>imagery</td><td>Element84 Earth Search<br><span class='muted'>sentinel-2-l2a</span></td><td>2025-08-12</td><td>Copernicus Sentinel data terms<br>Contains modified Copernicus Sentinel data 2025</td></tr>
+</table>
+<h2>Validation</h2><table>
+<tr><td class='ok'>PASS</td><td>coverage_complete</td><td class='muted'>non-finite DEM px: 0; non-finite imagery px: 0</td></tr>
+<tr><td class='ok'>PASS</td><td>dem_imagery_aligned</td><td class='muted'>2 grids share bounds EPSG:26910; max extent mismatch 0.000 m</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_elevation</td><td class='muted'>36864 studs</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_allowed_color</td><td class='muted'>all colors in catalog</td></tr>
+<tr><td class='ok'>PASS</td><td>no_terrain_below_datum</td><td class='muted'>min plates per exaggeration: {&#x27;x1.5&#x27;: 0}</td></tr>
+<tr><td class='ok'>PASS</td><td>quant_error_within_half_plate</td><td class='muted'>max |error| plates: {&#x27;x1.5&#x27;: 0.5}</td></tr>
+<tr><td class='ok'>PASS</td><td>catalog_colors_currently_produced</td><td class='muted'>19 colors used; not currently produced: []</td></tr>
+<tr><td class='ok'>PASS</td><td>terrain_colors_plate_buildable</td><td class='muted'>every used color is produced as a 1x1 plate</td></tr>
+<tr><td class='ok'>PASS</td><td>summit_position</td><td class='muted'>DEM max in stud (94, 95); highest stud (95, 96); offset 1 stud(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>exaggeration_invariance</td><td class='muted'>1 exaggerations share footprint [(192, 192)] and one color array per color setting (colors are computed independently of exaggeration)</td></tr>
+<tr><td class='ok'>PASS</td><td>viewer_written</td><td class='muted'>1 whole-mountain 3D viewer(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_valid:x1.5_sentinel2@2025-08-12_average_diffusion0.10</td><td class='muted'>95836 elements checked</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_seams:x1.5_sentinel2@2025-08-12_average_diffusion0.10</td><td class='muted'>module files together equal the full model</td></tr>
+</table>
+<details><summary>manifest.json</summary><pre>{
+ &quot;schemaVersion&quot;: 1,
+ &quot;runId&quot;: &quot;mount-st-helens-20261001T161623&quot;,
+ &quot;status&quot;: &quot;complete&quot;,
+ &quot;generatorVersion&quot;: &quot;0.1.0+6c8eab4-dirty&quot;,
+ &quot;createdAt&quot;: &quot;2026-10-01T16:16:25+00:00&quot;,
+ &quot;preset&quot;: {
+  &quot;id&quot;: &quot;mount-st-helens&quot;,
+  &quot;name&quot;: &quot;Mount St Helens&quot;,
+  &quot;center&quot;: {
+   &quot;lat&quot;: 46.1912,
+   &quot;lon&quot;: -122.1944
+  },
+  &quot;boundingBox&quot;: {
+   &quot;widthKm&quot;: 18,
+   &quot;heightKm&quot;: 18
+  },
+  &quot;targetStudWidth&quot;: 192,
+  &quot;moduleStudSize&quot;: 64,
+  &quot;surfaceResolutionStuds&quot;: 1,
+  &quot;verticalExaggeration&quot;: 2,
+  &quot;datumMode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;viewpoints&quot;: [
+   {
+    &quot;name&quot;: &quot;Johnston Ridge&quot;,
+    &quot;bearingDeg&quot;: 349,
+    &quot;elevationDeg&quot;: 15
+   },
+   {
+    &quot;name&quot;: &quot;Windy Ridge&quot;,
+    &quot;bearingDeg&quot;: 42,
+    &quot;elevationDeg&quot;: 20
+   },
+   {
+    &quot;name&quot;: &quot;Portland&quot;,
+    &quot;bearingDeg&quot;: 206,
+    &quot;elevationDeg&quot;: 8
+   }
+  ]
+ },
+ &quot;bounds&quot;: {
+  &quot;crs&quot;: &quot;EPSG:26910&quot;,
+  &quot;minE&quot;: 553164.0,
+  &quot;minN&quot;: 5106607.0,
+  &quot;maxE&quot;: 571164.0,
+  &quot;maxN&quot;: 5124607.0,
+  &quot;metersPerStud&quot;: 93.75,
+  &quot;studWidth&quot;: 192,
+  &quot;studHeight&quot;: 192
+ },
+ &quot;scale&quot;: {
+  &quot;metersPerPlateTrueScale&quot;: 37.5,
+  &quot;exaggerations&quot;: [
+   1.5
+  ]
+ },
+ &quot;datum&quot;: {
+  &quot;mode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;elevationM&quot;: 529.4836883544922,
+  &quot;rawDemMinM&quot;: 515.6480712890625
+ },
+ &quot;sources&quot;: [
+  {
+   &quot;role&quot;: &quot;elevation&quot;,
+   &quot;provider&quot;: &quot;USGS 3DEP&quot;,
+   &quot;dataset&quot;: &quot;3DEPElevation (Bare Earth DEM Dynamic)&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage&quot;
+   ],
+   &quot;itemIds&quot;: [],
+   &quot;acquisitionDate&quot;: null,
+   &quot;nativeResolutionM&quot;: 1.0,
+   &quot;analysisGridPx&quot;: 1920,
+   &quot;nativeCrs&quot;: &quot;EPSG:26910&quot;,
+   &quot;license&quot;: &quot;Public domain&quot;,
+   &quot;attribution&quot;: &quot;USGS 3D Elevation Program (3DEP)&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;46293be8e1f50da95d933a91aa7030f8370eba012117781d031e02bfa42f7329&quot;,
+    &quot;1b86d1e155be2668736ca5762f8d05f9f5eda76bc42a6b8c5ebbe2efd934face&quot;,
+    &quot;3f34803d843dfda6338458deb0b26db6397abc79e6b6642f377f864274fad451&quot;,
+    &quot;09ad6e8dd2006757da7a23685806936c89fc3deb537bba589140a6f8cda396b1&quot;,
+    &quot;ac50c579d14b7add618c52d5462de72f91754bbd5020269b5b5098b1c7f5011b&quot;,
+    &quot;32d2f1f322059053cd966208f5b31d475f16ad8f1a3760fba271d301605ce392&quot;,
+    &quot;1a69fbdf28073fa76ce6bd5fd3ff85be3d5a6a4845cbff5dcfbcdbb422675548&quot;,
+    &quot;c3faf1eb2e52ce95fc5592e173a1b2a9547aa2063e2e2ebe1d7e0ecc4e6cf9a2&quot;,
+    &quot;96c73b599d106aa392cdbc041dee180792e90d3d7c6c76d66d54b2a88bc73443&quot;,
+    &quot;5fd41861bc86891571a6da1dc2b5d8d549882201bbf4212a736c0c9dbf0cc7ce&quot;,
+    &quot;484021784c10ee81e97cdd3d6dcbb393cae8ffa14c4a3d44b602a71319ddb1b1&quot;,
+    &quot;ffec7e8cc0348e4cf7d794ef48202a96433f890a427bf803b8e9683e25666230&quot;,
+    &quot;9f756f618eed5297f500446b71a51683e58c7254a061219039323a79a1e966ac&quot;,
+    &quot;c23a1d403bea3432fb565fc3082f908e74111140a2216e68e3c4db7e5021153d&quot;,
+    &quot;8e5c05432e2d0970f0c386af5020d14bf7fe4e72d73c4b83aa1ea9848efd76e7&quot;,
+    &quot;39c7f42edd750e56281fbef0c9fa6c1e322d9dda6f817d053f15fd89b1f7bc12&quot;
+   ]
+  },
+  {
+   &quot;role&quot;: &quot;imagery&quot;,
+   &quot;provider&quot;: &quot;Element84 Earth Search&quot;,
+   &quot;dataset&quot;: &quot;sentinel-2-l2a&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/10/T/ES/2025/8/S2C_10TES_20250812_0_L2A/TCI.tif&quot;
+   ],
+   &quot;itemIds&quot;: [
+    &quot;S2C_10TES_20250812_0_L2A&quot;
+   ],
+   &quot;acquisitionDate&quot;: &quot;2025-08-12&quot;,
+   &quot;nativeResolutionM&quot;: 10.0,
+   &quot;analysisGridPx&quot;: 1920,
+   &quot;nativeCrs&quot;: &quot;EPSG:32610&quot;,
+   &quot;license&quot;: &quot;Copernicus Sentinel data terms&quot;,
+   &quot;attribution&quot;: &quot;Contains modified Copernicus Sentinel data 2025&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;dafa81318d2c9e15887913f03de11f67b5d4cbcca118aa83fe2d5a224da86bf9&quot;,
+    &quot;2040c6315e8bd3a73e497b0f92e51b402b50923d922441ffff025f1fc534d4ef&quot;
+   ],
+   &quot;imageryKey&quot;: &quot;sentinel2&quot;,
+   &quot;notes&quot;: [
+    &quot;tiles [&#x27;10TES&#x27;]; WGS84 UTM -&gt; NAD83 UTM datum offset (~1-2 m) treated as zero (datumOffsetNote); SCL cloud/shadow fraction 0.0000%&quot;
+   ]
+  }
+ ],
+ &quot;catalog&quot;: {
+  &quot;version&quot;: &quot;lego-1x1-2026-10-01&quot;,
+  &quot;sha256&quot;: &quot;313a874bc2e3b9a52333454ffbe36a7d309261fd5b5deb0fcd496c8ef2922d2d&quot;,
+  &quot;terrainPalette&quot;: {
+   &quot;rule&quot;: &quot;colors currently produced as 1x1 plate (3024)&quot;,
+   &quot;size&quot;: 47,
+   &quot;excluded&quot;: []
+  }
+ },
+ &quot;variants&quot;: [
+  {
+   &quot;key&quot;: &quot;x1.5_sentinel2@2025-08-12_average_diffusion0.10&quot;,
+   &quot;verticalExaggeration&quot;: 1.5,
+   &quot;color&quot;: {
+    &quot;imagerySource&quot;: &quot;sentinel2&quot;,
+    &quot;imageryDate&quot;: &quot;2025-08-12&quot;,
+    &quot;sampling&quot;: &quot;average&quot;,
+    &quot;assignment&quot;: &quot;diffusion&quot;,
+    &quot;diffusionStrength&quot;: 0.1
+   },
+   &quot;metrics&quot;: {
+    &quot;maxHeightPlates&quot;: 79,
+    &quot;maxHeightMm&quot;: 252.8,
+    &quot;colorDistribution&quot;: {
+     &quot;0&quot;: 11416,
+     &quot;2&quot;: 6,
+     &quot;15&quot;: 163,
+     &quot;19&quot;: 40,
+     &quot;28&quot;: 2977,
+     &quot;70&quot;: 56,
+     &quot;71&quot;: 153,
+     &quot;72&quot;: 5506,
+     &quot;78&quot;: 588,
+     &quot;80&quot;: 13,
+     &quot;84&quot;: 112,
+     &quot;92&quot;: 30,
+     &quot;288&quot;: 12897,
+     &quot;308&quot;: 2426,
+     &quot;326&quot;: 1,
+     &quot;330&quot;: 10,
+     &quot;371&quot;: 466,
+     &quot;430&quot;: 1,
+     &quot;484&quot;: 3
+    }
+   }
+  }
+ ],
+ &quot;summary&quot;: {
+  &quot;geographicWidthM&quot;: 18000.0,
+  &quot;geographicHeightM&quot;: 18000.0,
+  &quot;physicalWidthMm&quot;: 1536.0,
+  &quot;physicalDepthMm&quot;: 1536.0,
+  &quot;summitStud&quot;: [
+   95,
+   96
+  ],
+  &quot;summitElevationM&quot;: 2516.3845678710936,
+  &quot;summitSourceElevationM&quot;: 2538.5830078125,
+  &quot;reliefM&quot;: 1986.9008795166014
+ },
+ &quot;outputs&quot;: {
+  &quot;canonical&quot;: {
+   &quot;path&quot;: &quot;canonical.npz&quot;,
+   &quot;sha256&quot;: &quot;ee9b51895d00eb75e64eca3c779e5db7a826557f2be545596e24fa5a7fd9a4b7&quot;
+  },
+  &quot;preview:height-x1.5&quot;: {
+   &quot;path&quot;: &quot;previews/height-x1.5.png&quot;,
+   &quot;sha256&quot;: &quot;04ad8c5dda8f34e92955364af70f44ea1e4584eed06002b3e865ea9180571775&quot;
+  },
+  &quot;preview:color-sentinel2@2025-08-12_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;previews/color-sentinel2@2025-08-12_average_diffusion0.10.png&quot;,
+   &quot;sha256&quot;: &quot;58f000295760baec216f89772cc9bcee5b8a0b9506a6404caffc2b19f0e1f3e9&quot;
+  },
+  &quot;preview:imagery-sentinel2@2025-08-12&quot;: {
+   &quot;path&quot;: &quot;previews/imagery-sentinel2@2025-08-12.png&quot;,
+   &quot;sha256&quot;: &quot;3c95bb737ed6b569631204f56912ebd3203d3cc26bd77668fb212c7b18c4ab1c&quot;
+  },
+  &quot;viewer:x1.5_sentinel2@2025-08-12_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;viewer/x1.5_sentinel2@2025-08-12_average_diffusion0.10.html&quot;,
+   &quot;sha256&quot;: &quot;752a20a9ff0308dc33ab75cf0aaf340eed178128f7717524f4ed917bd1f0d845&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_A1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_A1.ldr&quot;,
+   &quot;sha256&quot;: &quot;1413cd08ac11c814ad1ecba5d10dfab8b2d5230859b8d63e5c893c823ad824f6&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_A2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_A2.ldr&quot;,
+   &quot;sha256&quot;: &quot;218514f0011270044745cc1b4357c0a2a07ece1b7ddad02a65b004f74b42e4a1&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_A3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_A3.ldr&quot;,
+   &quot;sha256&quot;: &quot;d228b01fcc587d7d71a84b93ddef8be045de6885805c01d8075e10c912fb7e01&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_B1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_B1.ldr&quot;,
+   &quot;sha256&quot;: &quot;854c3eb24d7c44bcc7124f72bf47c10a103e4f4aa4e84e8cf1ffbdab77ab039b&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_B2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_B2.ldr&quot;,
+   &quot;sha256&quot;: &quot;d7977c282fd640d1aa0c66973e56d60bcf74d896df6cbe37be56e99c2ea35d36&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_B3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_B3.ldr&quot;,
+   &quot;sha256&quot;: &quot;9667a9b837e7cfc0f290dc910fdd79ab032e707874cfcd51c85c6dc6e0364c7d&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_C1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_C1.ldr&quot;,
+   &quot;sha256&quot;: &quot;db16ed7b717fb95516e6b0191c549727614550d544d3ee60f0b5dc68ccb7fdd4&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_C2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_C2.ldr&quot;,
+   &quot;sha256&quot;: &quot;9b8bba3757a599d2f21d5e63bd9ba7a009b9f1cb274ec786ba5f21e1ca4aa2b6&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:Module_C3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Module_C3.ldr&quot;,
+   &quot;sha256&quot;: &quot;6bf1dfaf660f4ed27db1d640f7e5266694a87b010dcfd17c6bb277bcf25cbc0a&quot;
+  },
+  &quot;ldraw:x1.5_sentinel2@2025-08-12_average_diffusion0.10:full&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.5_sentinel2@2025-08-12_average_diffusion0.10/Mount_St_Helens.mpd&quot;,
+   &quot;sha256&quot;: &quot;9f1cee22e836307d91c56aa4ff6ec0077542b436a74fb542f28c197f1a13ae29&quot;
+  }
+ },
+ &quot;validation&quot;: [
+  {
+   &quot;check&quot;: &quot;coverage_complete&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;non-finite DEM px: 0; non-finite imagery px: 0&quot;
+  },
+  {
+   &quot;check&quot;: &quot;dem_imagery_aligned&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;2 grids share bounds EPSG:26910; max extent mismatch 0.000 m&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_elevation&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;36864 studs&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_allowed_color&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;all colors in catalog&quot;
+  },
+  {
+   &quot;check&quot;: &quot;no_terrain_below_datum&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;min plates per exaggeration: {&#x27;x1.5&#x27;: 0}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;quant_error_within_half_plate&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;max |error| plates: {&#x27;x1.5&#x27;: 0.5}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;catalog_colors_currently_produced&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;19 colors used; not currently produced: []&quot;
+  },
+  {
+   &quot;check&quot;: &quot;terrain_colors_plate_buildable&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;every used color is produced as a 1x1 plate&quot;
+  },
+  {
+   &quot;check&quot;: &quot;summit_position&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;DEM max in stud (94, 95); highest stud (95, 96); offset 1 stud(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;exaggeration_invariance&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 exaggerations share footprint [(192, 192)] and one color array per color setting (colors are computed independently of exaggeration)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;viewer_written&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 whole-mountain 3D viewer(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_valid:x1.5_sentinel2@2025-08-12_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;95836 elements checked&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_seams:x1.5_sentinel2@2025-08-12_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;module files together equal the full model&quot;
+  }
+ ],
+ &quot;exportMode&quot;: &quot;both&quot;,
+ &quot;ldrawCounts&quot;: {
+  &quot;x1.5_sentinel2@2025-08-12_average_diffusion0.10&quot;: {
+   &quot;Module_A1&quot;: 5638,
+   &quot;Module_A2&quot;: 5490,
+   &quot;Module_A3&quot;: 5324,
+   &quot;Module_B1&quot;: 4892,
+   &quot;Module_B2&quot;: 5772,
+   &quot;Module_B3&quot;: 4688,
+   &quot;Module_C1&quot;: 6193,
+   &quot;Module_C2&quot;: 5204,
+   &quot;Module_C3&quot;: 4717,
+   &quot;Mount_St_Helens&quot;: 47918
+  }
+ }
+}</pre></details>
+</body></html>
