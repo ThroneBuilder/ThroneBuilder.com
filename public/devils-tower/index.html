@@ -1,0 +1,413 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Devils Tower — devils-tower-20261001T191944</title>
+<style>
+body{font:14px/1.45 system-ui,sans-serif;margin:0;padding:16px 24px;background:#fafafa;color:#1b1b1b}
+h1{margin:.2em 0}h2{margin:1.4em 0 .5em;border-bottom:1px solid #ddd}
+.grid{display:flex;flex-wrap:wrap;gap:16px}.grid figure{margin:0;flex:1 1 360px;max-width:700px}
+figure img{width:100%;image-rendering:pixelated;border:1px solid #ccc;background:#fff}
+figcaption{font-size:12px;color:#555}table{border-collapse:collapse}td,th{padding:3px 10px;border-bottom:1px solid #e5e5e5;text-align:left}
+.ok{color:#11772d}.bad{color:#b00020;font-weight:600}code{font-size:12px}.muted{color:#777}
+</style><script>
+function setGrid(on){document.querySelectorAll('img[data-grid]').forEach(i=>{i.src=on?i.dataset.grid:i.dataset.plain});}
+function pickVariant(k){document.querySelectorAll('.variant').forEach(d=>{d.hidden=d.dataset.key!==k});}
+</script></head><body>
+<h1>Devils Tower</h1>
+<p class='muted'>run <code>devils-tower-20261001T191944</code> · generator 0.1.0+3c1a604-dirty · catalog lego-1x1-2026-10-01 · status <span class='ok'>complete</span></p>
+<p><label><input type='checkbox' onchange='setGrid(this.checked)'> show 64-stud module grid (A1 = NW)</label> · variant <select onchange='pickVariant(this.value)'><option value='x1.0_naip_average_diffusion0.10'>x1.0_naip_average_diffusion0.10</option></select></p>
+<section class='variant' data-key='x1.0_naip_average_diffusion0.10' >
+<h2>x1.0_naip_average_diffusion0.10</h2><p>max height 240 plates = 768.0 mm · <a href='viewer.html'>open whole-mountain 3D view</a></p>
+<div class='grid'>
+<figure><img src="./height-x1.0.png" data-plain="./height-x1.0.png" data-grid="./height-x1.0_grid.png" alt="LEGO height (stepped, hillshaded)"><figcaption>LEGO height (stepped, hillshaded)</figcaption></figure>
+<figure><img src="./color-naip_average_diffusion0.10.png" data-plain="./color-naip_average_diffusion0.10.png" data-grid="./color-naip_average_diffusion0.10_grid.png" alt="LEGO colors (1 block = 1 stud)"><figcaption>LEGO colors (1 block = 1 stud)</figcaption></figure>
+<figure><img src="./imagery-naip.png" data-plain="./imagery-naip.png" data-grid="./imagery-naip_grid.png" alt="source imagery (naip)"><figcaption>source imagery (naip)</figcaption></figure>
+</div></section>
+<h2>Summary</h2><table><tr><th>footprint</th><td>2048.0 × 2048.0 mm (256 × 256 studs)</td></tr><tr><th>geographic area</th><td>1.00 × 1.00 km, 3.90625 m per stud, EPSG:26913</td></tr><tr><th>datum</th><td>1182.4 m (raw DEM min 1182.1 m)</td></tr><tr><th>summit</th><td>1558.0 m stud-mean at stud [116, 118] (source max 1558.1 m)</td></tr><tr><th>relief above datum</th><td>375.6 m</td></tr><tr><th>meters per plate (1×)</th><td>1.562</td></tr><tr><th>max height x1.0</th><td>240 plates / 768.0 mm</td></tr></table>
+<details><summary>color distribution — x1.0_naip_average_diffusion0.10</summary><table><tr><td>LDraw 72</td><td>40754 studs</td></tr><tr><td>LDraw 28</td><td>10213 studs</td></tr><tr><td>LDraw 288</td><td>8924 studs</td></tr><tr><td>LDraw 0</td><td>3036 studs</td></tr><tr><td>LDraw 2</td><td>590 studs</td></tr><tr><td>LDraw 19</td><td>538 studs</td></tr><tr><td>LDraw 308</td><td>421 studs</td></tr><tr><td>LDraw 330</td><td>368 studs</td></tr><tr><td>LDraw 71</td><td>253 studs</td></tr><tr><td>LDraw 378</td><td>166 studs</td></tr><tr><td>LDraw 371</td><td>95 studs</td></tr><tr><td>LDraw 323</td><td>92 studs</td></tr><tr><td>LDraw 84</td><td>52 studs</td></tr><tr><td>LDraw 15</td><td>18 studs</td></tr><tr><td>LDraw 78</td><td>10 studs</td></tr><tr><td>LDraw 80</td><td>3 studs</td></tr><tr><td>LDraw 70</td><td>2 studs</td></tr><tr><td>LDraw 272</td><td>1 studs</td></tr></table></details>
+<h2>Sources</h2><table><tr><th>role</th><th>provider / dataset</th><th>date</th><th>license · attribution</th></tr>
+<tr><td>elevation</td><td>USGS 3DEP<br><span class='muted'>3DEPElevation (Bare Earth DEM Dynamic)</span></td><td>None</td><td>Public domain<br>USGS 3D Elevation Program (3DEP)</td></tr>
+<tr><td>imagery</td><td>USGS The National Map<br><span class='muted'>USGSNAIPPlus (NAIP, latest mosaic)</span></td><td>2022-06-27</td><td>Public domain<br>USDA FSA NAIP via USGS The National Map</td></tr>
+</table>
+<h2>Validation</h2><table>
+<tr><td class='ok'>PASS</td><td>coverage_complete</td><td class='muted'>non-finite DEM px: 0; non-finite imagery px: 0</td></tr>
+<tr><td class='ok'>PASS</td><td>dem_imagery_aligned</td><td class='muted'>2 grids share bounds EPSG:26913; max extent mismatch 0.000 m</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_elevation</td><td class='muted'>65536 studs</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_allowed_color</td><td class='muted'>all colors in catalog</td></tr>
+<tr><td class='ok'>PASS</td><td>no_terrain_below_datum</td><td class='muted'>min plates per exaggeration: {&#x27;x1.0&#x27;: 0}</td></tr>
+<tr><td class='ok'>PASS</td><td>quant_error_within_half_plate</td><td class='muted'>max |error| plates: {&#x27;x1.0&#x27;: 0.5}</td></tr>
+<tr><td class='ok'>PASS</td><td>catalog_colors_currently_produced</td><td class='muted'>18 colors used; not currently produced: []</td></tr>
+<tr><td class='ok'>PASS</td><td>terrain_colors_plate_buildable</td><td class='muted'>every used color is produced as a 1x1 plate</td></tr>
+<tr><td class='ok'>PASS</td><td>summit_position</td><td class='muted'>DEM max in stud (116, 119); highest stud (116, 118); offset 1 stud(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>exaggeration_invariance</td><td class='muted'>1 exaggerations share footprint [(256, 256)] and one color array per color setting (colors are computed independently of exaggeration)</td></tr>
+<tr><td class='ok'>PASS</td><td>viewer_written</td><td class='muted'>1 whole-mountain 3D viewer(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_valid:x1.0_naip_average_diffusion0.10</td><td class='muted'>178554 elements checked</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_seams:x1.0_naip_average_diffusion0.10</td><td class='muted'>module files together equal the full model</td></tr>
+</table>
+<details><summary>manifest.json</summary><pre>{
+ &quot;schemaVersion&quot;: 1,
+ &quot;runId&quot;: &quot;devils-tower-20261001T191944&quot;,
+ &quot;status&quot;: &quot;complete&quot;,
+ &quot;generatorVersion&quot;: &quot;0.1.0+3c1a604-dirty&quot;,
+ &quot;createdAt&quot;: &quot;2026-10-01T19:19:49+00:00&quot;,
+ &quot;preset&quot;: {
+  &quot;id&quot;: &quot;devils-tower&quot;,
+  &quot;name&quot;: &quot;Devils Tower&quot;,
+  &quot;center&quot;: {
+   &quot;lat&quot;: 44.5902,
+   &quot;lon&quot;: -104.7146
+  },
+  &quot;boundingBox&quot;: {
+   &quot;widthKm&quot;: 1,
+   &quot;heightKm&quot;: 1
+  },
+  &quot;targetStudWidth&quot;: 256,
+  &quot;moduleStudSize&quot;: 64,
+  &quot;surfaceResolutionStuds&quot;: 1,
+  &quot;verticalExaggeration&quot;: 1,
+  &quot;datumMode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;viewpoints&quot;: [
+   {
+    &quot;name&quot;: &quot;Visitor Center&quot;,
+    &quot;bearingDeg&quot;: 140,
+    &quot;elevationDeg&quot;: 12
+   },
+   {
+    &quot;name&quot;: &quot;Joyner Ridge&quot;,
+    &quot;bearingDeg&quot;: 302,
+    &quot;elevationDeg&quot;: 10
+   }
+  ]
+ },
+ &quot;bounds&quot;: {
+  &quot;crs&quot;: &quot;EPSG:26913&quot;,
+  &quot;minE&quot;: 522154.0,
+  &quot;minN&quot;: 4936968.0,
+  &quot;maxE&quot;: 523154.0,
+  &quot;maxN&quot;: 4937968.0,
+  &quot;metersPerStud&quot;: 3.90625,
+  &quot;studWidth&quot;: 256,
+  &quot;studHeight&quot;: 256
+ },
+ &quot;scale&quot;: {
+  &quot;metersPerPlateTrueScale&quot;: 1.5625,
+  &quot;exaggerations&quot;: [
+   1
+  ]
+ },
+ &quot;datum&quot;: {
+  &quot;mode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;elevationM&quot;: 1182.4269116210937,
+  &quot;rawDemMinM&quot;: 1182.0567626953125
+ },
+ &quot;sources&quot;: [
+  {
+   &quot;role&quot;: &quot;elevation&quot;,
+   &quot;provider&quot;: &quot;USGS 3DEP&quot;,
+   &quot;dataset&quot;: &quot;3DEPElevation (Bare Earth DEM Dynamic)&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage&quot;
+   ],
+   &quot;itemIds&quot;: [],
+   &quot;acquisitionDate&quot;: null,
+   &quot;nativeResolutionM&quot;: 1.0,
+   &quot;analysisGridPx&quot;: 2560,
+   &quot;nativeCrs&quot;: &quot;EPSG:26913&quot;,
+   &quot;license&quot;: &quot;Public domain&quot;,
+   &quot;attribution&quot;: &quot;USGS 3D Elevation Program (3DEP)&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;cd5c2b1d8139c038061842bbc359c2183e46f70c85edd597ff51751cd0e5c314&quot;,
+    &quot;d88c6f41f95db44819fc213e7b6f18450cd654a4c767947fd1c5db9197cfc0ce&quot;,
+    &quot;c900091ff478f7c8d77418649687547626f8228c10a677d4ce9abb7c1cd54d57&quot;,
+    &quot;da92dd5b8e04b5a76295378754301bce526a1fb3e5f081f1a05708c3c15521db&quot;,
+    &quot;71979c9cbcb6cb2057cbc4b2dd6a7762490299397cb28bd3c386d136bbb2db72&quot;,
+    &quot;12ef52c05b5bb7a0b56c76101bc25a8877e7d1f39c79a7fee7900c9c48a08647&quot;,
+    &quot;fff2ede031d09eba48eb4ff475702dd6c53bfb0060b4ab21793b096191ae2573&quot;,
+    &quot;ef936c7d7afbd7db923383fb45c65730a8e7f6ce97846809804ad2f94c8a54cc&quot;,
+    &quot;06b2b840e6a5c9dbad070effa993e30a3f9e79bd08dc8d8a180edcf6ae348696&quot;,
+    &quot;f867e8aec44301e9306572b19a87689a943d1da3415f7084fffd686eb74781de&quot;,
+    &quot;fe89a5795c070cc9721b1b243585366aec085de05a3465155fe99676444146a5&quot;,
+    &quot;216b64d51b2439bdef1b123df49de468b72b7fee875414656d8087f67dea0653&quot;,
+    &quot;37a581a86eb9957469df8c347ce6ec2b0813acedf4a9e7673556f85e453f7efc&quot;,
+    &quot;c8aeb9e1c211dece12b734583d67fe0cb9ceb32f53d3c358a520c946d3c03f87&quot;,
+    &quot;60ebafc1458d3c598b894e098a9f367f8da3d800a3f502d96775aed9e3edb0d2&quot;,
+    &quot;3f3c31b6181d6ae5ff4be67035e758468173c3c3240024c8455120051690bcd2&quot;
+   ]
+  },
+  {
+   &quot;role&quot;: &quot;imagery&quot;,
+   &quot;provider&quot;: &quot;USGS The National Map&quot;,
+   &quot;dataset&quot;: &quot;USGSNAIPPlus (NAIP, latest mosaic)&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage&quot;
+   ],
+   &quot;itemIds&quot;: [
+    &quot;wy_m_4410427_nw_13_060_20220627&quot;
+   ],
+   &quot;acquisitionDate&quot;: &quot;2022-06-27&quot;,
+   &quot;nativeResolutionM&quot;: 0.6,
+   &quot;analysisGridPx&quot;: 3840,
+   &quot;nativeCrs&quot;: &quot;EPSG:26913&quot;,
+   &quot;license&quot;: &quot;Public domain&quot;,
+   &quot;attribution&quot;: &quot;USDA FSA NAIP via USGS The National Map&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;32b1b6c61180aacdf5d82e9f684262bf0e323c354ae582b6953bd1b3b67afe52&quot;,
+    &quot;8a1d75abf7e39c9a315a2f014dc3df1c582e2735a28fa4529ce53a217c00a4af&quot;,
+    &quot;f1b3597700e13edab563892d2435cbbf8ac1221864790b1cb3c1ba92e4020157&quot;,
+    &quot;055ecdcfc98799ed17dd337a05ab4343041dd74764226903f09629c5f1d9f516&quot;,
+    &quot;0f47775c8220823379e88a55c2334593b0206896b216be9f62723d82bbec61e0&quot;,
+    &quot;db59284ecc0fc4337c3b7092a00276faf797bb900048e11cc3f57ac38bf05807&quot;,
+    &quot;db761fe1ad662062f82bbba63afa735dcffc0052966f9efbbdc69b692d18eff8&quot;,
+    &quot;025b1c83b8f6bd697fe1495893ae35ecfb718929ac4a92912af7bbd66174ea27&quot;,
+    &quot;272a9bcb2b0f453f7e5a02ee52ac64fa36b1a73823ab2ca2bbc3612a824531a7&quot;,
+    &quot;9e7fa5084f6c4cd1bd3f1b9023b0beb22d887488eb4b77158f5d87799a120683&quot;,
+    &quot;2cdb23d3f72ccd01afba9e9b242a29fcacc33c626b16274b4625540105292fa0&quot;,
+    &quot;b167016c4d53aabadd077a15938ed6f1d016ecec51178fea7b9d94c1ca409cfe&quot;,
+    &quot;425cf7424dd7a5c976152d3f58798f7d5a8212f1a33ead30173eb2cdb391924a&quot;,
+    &quot;bbcce063775e11160d07e58685f8249cf534f605120b02fc94a30631ee772ade&quot;,
+    &quot;c33d0ee00e06bd97fb8a72c56532990e1ed145adcde13314273e2b80d6290696&quot;,
+    &quot;ab91ae207099d5664315de0d954282a07c2249f87ccae2d4b022a72575692c50&quot;
+   ],
+   &quot;imageryKey&quot;: &quot;naip&quot;,
+   &quot;notes&quot;: [
+    &quot;acquisition date cross-referenced from Planetary Computer NAIP STAC (1 items, 2022-06-27..2022-06-27)&quot;
+   ]
+  }
+ ],
+ &quot;catalog&quot;: {
+  &quot;version&quot;: &quot;lego-1x1-2026-10-01&quot;,
+  &quot;sha256&quot;: &quot;313a874bc2e3b9a52333454ffbe36a7d309261fd5b5deb0fcd496c8ef2922d2d&quot;,
+  &quot;terrainPalette&quot;: {
+   &quot;rule&quot;: &quot;colors currently produced as 1x1 plate (3024)&quot;,
+   &quot;size&quot;: 47,
+   &quot;excluded&quot;: []
+  }
+ },
+ &quot;variants&quot;: [
+  {
+   &quot;key&quot;: &quot;x1.0_naip_average_diffusion0.10&quot;,
+   &quot;verticalExaggeration&quot;: 1,
+   &quot;color&quot;: {
+    &quot;imagerySource&quot;: &quot;naip&quot;,
+    &quot;imageryDate&quot;: null,
+    &quot;sampling&quot;: &quot;average&quot;,
+    &quot;assignment&quot;: &quot;diffusion&quot;,
+    &quot;diffusionStrength&quot;: 0.1
+   },
+   &quot;metrics&quot;: {
+    &quot;maxHeightPlates&quot;: 240,
+    &quot;maxHeightMm&quot;: 768.0,
+    &quot;colorDistribution&quot;: {
+     &quot;0&quot;: 3036,
+     &quot;2&quot;: 590,
+     &quot;15&quot;: 18,
+     &quot;19&quot;: 538,
+     &quot;28&quot;: 10213,
+     &quot;70&quot;: 2,
+     &quot;71&quot;: 253,
+     &quot;72&quot;: 40754,
+     &quot;78&quot;: 10,
+     &quot;80&quot;: 3,
+     &quot;84&quot;: 52,
+     &quot;272&quot;: 1,
+     &quot;288&quot;: 8924,
+     &quot;308&quot;: 421,
+     &quot;323&quot;: 92,
+     &quot;330&quot;: 368,
+     &quot;371&quot;: 95,
+     &quot;378&quot;: 166
+    }
+   }
+  }
+ ],
+ &quot;summary&quot;: {
+  &quot;geographicWidthM&quot;: 1000.0,
+  &quot;geographicHeightM&quot;: 1000.0,
+  &quot;physicalWidthMm&quot;: 2048.0,
+  &quot;physicalDepthMm&quot;: 2048.0,
+  &quot;summitStud&quot;: [
+   116,
+   118
+  ],
+  &quot;summitElevationM&quot;: 1557.98578125,
+  &quot;summitSourceElevationM&quot;: 1558.0689697265625,
+  &quot;reliefM&quot;: 375.5588696289062
+ },
+ &quot;outputs&quot;: {
+  &quot;canonical&quot;: {
+   &quot;path&quot;: &quot;canonical.npz&quot;,
+   &quot;sha256&quot;: &quot;4744369686805c81027e3a8f2329ea7cc0d14597b9751f6d01be2edf305b07e0&quot;
+  },
+  &quot;preview:height-x1.0&quot;: {
+   &quot;path&quot;: &quot;previews/height-x1.0.png&quot;,
+   &quot;sha256&quot;: &quot;a255c73fc56dad5108036c011c21be4848d644002eded21e579b92fed21af09b&quot;
+  },
+  &quot;preview:color-naip_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;previews/color-naip_average_diffusion0.10.png&quot;,
+   &quot;sha256&quot;: &quot;4a1dc650ca1213e42888cb921f7cd85b18737b64e1a38e5a7447d269c1e1d54d&quot;
+  },
+  &quot;preview:imagery-naip&quot;: {
+   &quot;path&quot;: &quot;previews/imagery-naip.png&quot;,
+   &quot;sha256&quot;: &quot;f418cb57780acb73aae29ecba64ec712f32de0be97c94381c3304677281c9a94&quot;
+  },
+  &quot;viewer:x1.0_naip_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;viewer/x1.0_naip_average_diffusion0.10.html&quot;,
+   &quot;sha256&quot;: &quot;4d8ab21e3b9ed1591b319cd35170b2cd34554f7e2c7642820800c5ac9048de5e&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_A1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_A1.ldr&quot;,
+   &quot;sha256&quot;: &quot;f1e924920b38f7b4680e3377a900764ecbcc2478e3d71fcf3174d3201b1b472d&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_A2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_A2.ldr&quot;,
+   &quot;sha256&quot;: &quot;9815e0b8c279c86909d578d600880f2dd7d0cf60f10d2be0cc506bd11553ea1a&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_A3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_A3.ldr&quot;,
+   &quot;sha256&quot;: &quot;341e378c0015ef89eed12711d482b13035aa75a2a1c93e389bc6fb0a8c0052f1&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_A4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_A4.ldr&quot;,
+   &quot;sha256&quot;: &quot;d9ee7fc138fe7959e54f895a685cd26c703f5e2ba969150aeecbc9c539c20e76&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_B1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_B1.ldr&quot;,
+   &quot;sha256&quot;: &quot;3fb94b2ac0a14e59393b808a7db052a3a219d35199595a202eb35575154f7117&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_B2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_B2.ldr&quot;,
+   &quot;sha256&quot;: &quot;96da95b149da0b1bcb99fc0423e28a0a3738f533ee83f959eaaa3a9e5c1f7960&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_B3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_B3.ldr&quot;,
+   &quot;sha256&quot;: &quot;f62b3102807cc1f5c3efaa3fb1065fc0af951b4294d24e09b4be849eb19934cb&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_B4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_B4.ldr&quot;,
+   &quot;sha256&quot;: &quot;b1bcdf164dbfaf31046dccba04d946af8cabee57a268cdf0f2ae52afe5211f78&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_C1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_C1.ldr&quot;,
+   &quot;sha256&quot;: &quot;d6dd634d788f00e085dbec7c906e6bd8e70afdfa3af8dca4912ca31757effd36&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_C2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_C2.ldr&quot;,
+   &quot;sha256&quot;: &quot;9f6759e990dd8caf38f869c7f9daeea2b4d4a091711a84ad55d719e15950cfab&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_C3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_C3.ldr&quot;,
+   &quot;sha256&quot;: &quot;e9e84533239bb063be294dddb43acdb5f1ec166693112f2e97eca6d34c8e01b5&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_C4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_C4.ldr&quot;,
+   &quot;sha256&quot;: &quot;0ff909fdb2f410de7778f191a4cfef7f28a881baf919de89a3e81d4c2c5bcdf2&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_D1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_D1.ldr&quot;,
+   &quot;sha256&quot;: &quot;fae57ec85cb32eb6b72a2b43ab1f125806d9280932e804793f533d562d85e75e&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_D2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_D2.ldr&quot;,
+   &quot;sha256&quot;: &quot;8baff2d1b12e44b8aed79accc754ef69fd3b0b18e02762c2c1841845a0e11504&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_D3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_D3.ldr&quot;,
+   &quot;sha256&quot;: &quot;25e5eb76876c49f71198d3d0267808ac00ccdf998664b642b48d7d37677e9150&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:Module_D4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Module_D4.ldr&quot;,
+   &quot;sha256&quot;: &quot;aec1cbca4d5c3be35b9f1acc9056ae5bba2533538d9eae572af58fe07bf20ae3&quot;
+  },
+  &quot;ldraw:x1.0_naip_average_diffusion0.10:full&quot;: {
+   &quot;path&quot;: &quot;ldraw/x1.0_naip_average_diffusion0.10/Devils_Tower.mpd&quot;,
+   &quot;sha256&quot;: &quot;8a180af0db2f047a0b0c7a2788f99e06c424883445316cb3e438c35d1be2626a&quot;
+  }
+ },
+ &quot;validation&quot;: [
+  {
+   &quot;check&quot;: &quot;coverage_complete&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;non-finite DEM px: 0; non-finite imagery px: 0&quot;
+  },
+  {
+   &quot;check&quot;: &quot;dem_imagery_aligned&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;2 grids share bounds EPSG:26913; max extent mismatch 0.000 m&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_elevation&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;65536 studs&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_allowed_color&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;all colors in catalog&quot;
+  },
+  {
+   &quot;check&quot;: &quot;no_terrain_below_datum&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;min plates per exaggeration: {&#x27;x1.0&#x27;: 0}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;quant_error_within_half_plate&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;max |error| plates: {&#x27;x1.0&#x27;: 0.5}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;catalog_colors_currently_produced&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;18 colors used; not currently produced: []&quot;
+  },
+  {
+   &quot;check&quot;: &quot;terrain_colors_plate_buildable&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;every used color is produced as a 1x1 plate&quot;
+  },
+  {
+   &quot;check&quot;: &quot;summit_position&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;DEM max in stud (116, 119); highest stud (116, 118); offset 1 stud(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;exaggeration_invariance&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 exaggerations share footprint [(256, 256)] and one color array per color setting (colors are computed independently of exaggeration)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;viewer_written&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 whole-mountain 3D viewer(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_valid:x1.0_naip_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;178554 elements checked&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_seams:x1.0_naip_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;module files together equal the full model&quot;
+  }
+ ],
+ &quot;exportMode&quot;: &quot;both&quot;,
+ &quot;ldrawCounts&quot;: {
+  &quot;x1.0_naip_average_diffusion0.10&quot;: {
+   &quot;Module_A1&quot;: 6586,
+   &quot;Module_A2&quot;: 5592,
+   &quot;Module_A3&quot;: 5553,
+   &quot;Module_A4&quot;: 6026,
+   &quot;Module_B1&quot;: 5623,
+   &quot;Module_B2&quot;: 6086,
+   &quot;Module_B3&quot;: 5554,
+   &quot;Module_B4&quot;: 5471,
+   &quot;Module_C1&quot;: 5702,
+   &quot;Module_C2&quot;: 5170,
+   &quot;Module_C3&quot;: 4608,
+   &quot;Module_C4&quot;: 5347,
+   &quot;Module_D1&quot;: 6435,
+   &quot;Module_D2&quot;: 5556,
+   &quot;Module_D3&quot;: 5036,
+   &quot;Module_D4&quot;: 4932,
+   &quot;Devils_Tower&quot;: 89277
+  }
+ }
+}</pre></details>
+</body></html>

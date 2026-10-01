@@ -1,0 +1,450 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Seattle — seattle-20261001T191413</title>
+<style>
+body{font:14px/1.45 system-ui,sans-serif;margin:0;padding:16px 24px;background:#fafafa;color:#1b1b1b}
+h1{margin:.2em 0}h2{margin:1.4em 0 .5em;border-bottom:1px solid #ddd}
+.grid{display:flex;flex-wrap:wrap;gap:16px}.grid figure{margin:0;flex:1 1 360px;max-width:700px}
+figure img{width:100%;image-rendering:pixelated;border:1px solid #ccc;background:#fff}
+figcaption{font-size:12px;color:#555}table{border-collapse:collapse}td,th{padding:3px 10px;border-bottom:1px solid #e5e5e5;text-align:left}
+.ok{color:#11772d}.bad{color:#b00020;font-weight:600}code{font-size:12px}.muted{color:#777}
+</style><script>
+function setGrid(on){document.querySelectorAll('img[data-grid]').forEach(i=>{i.src=on?i.dataset.grid:i.dataset.plain});}
+function pickVariant(k){document.querySelectorAll('.variant').forEach(d=>{d.hidden=d.dataset.key!==k});}
+</script></head><body>
+<h1>Seattle</h1>
+<p class='muted'>run <code>seattle-20261001T191413</code> · generator 0.1.0+3c1a604-dirty · catalog lego-1x1-2026-10-01 · status <span class='bad'>failed</span></p>
+<p><label><input type='checkbox' onchange='setGrid(this.checked)'> show 64-stud module grid (A1 = NW)</label> · variant <select onchange='pickVariant(this.value)'><option value='x4.0_naip_average_diffusion0.10'>x4.0_naip_average_diffusion0.10</option></select></p>
+<section class='variant' data-key='x4.0_naip_average_diffusion0.10' >
+<h2>x4.0_naip_average_diffusion0.10</h2><p>max height 19 plates = 60.8 mm · <a href='viewer.html'>open whole-mountain 3D view</a></p>
+<div class='grid'>
+<figure><img src="./height-x4.0.png" data-plain="./height-x4.0.png" data-grid="./height-x4.0_grid.png" alt="LEGO height (stepped, hillshaded)"><figcaption>LEGO height (stepped, hillshaded)</figcaption></figure>
+<figure><img src="./color-naip_average_diffusion0.10.png" data-plain="./color-naip_average_diffusion0.10.png" data-grid="./color-naip_average_diffusion0.10_grid.png" alt="LEGO colors (1 block = 1 stud)"><figcaption>LEGO colors (1 block = 1 stud)</figcaption></figure>
+<figure><img src="./imagery-naip.png" data-plain="./imagery-naip.png" data-grid="./imagery-naip_grid.png" alt="source imagery (naip)"><figcaption>source imagery (naip)</figcaption></figure>
+</div></section>
+<h2>Summary</h2><table><tr><th>footprint</th><td>2048.0 × 2048.0 mm (256 × 256 studs)</td></tr><tr><th>geographic area</th><td>24.00 × 24.00 km, 93.75 m per stud, EPSG:26910</td></tr><tr><th>datum</th><td>-0.7 m (raw DEM min -1.9 m)</td></tr><tr><th>summit</th><td>172.7 m stud-mean at stud [253, 215] (source max 176.6 m)</td></tr><tr><th>relief above datum</th><td>173.5 m</td></tr><tr><th>meters per plate (1×)</th><td>37.500</td></tr><tr><th>max height x4.0</th><td>19 plates / 60.8 mm</td></tr></table>
+<details><summary>color distribution — x4.0_naip_average_diffusion0.10</summary><table><tr><td>LDraw 0</td><td>26220 studs</td></tr><tr><td>LDraw 72</td><td>20180 studs</td></tr><tr><td>LDraw 288</td><td>12176 studs</td></tr><tr><td>LDraw 272</td><td>3644 studs</td></tr><tr><td>LDraw 71</td><td>1452 studs</td></tr><tr><td>LDraw 28</td><td>1341 studs</td></tr><tr><td>LDraw 85</td><td>283 studs</td></tr><tr><td>LDraw 2</td><td>141 studs</td></tr><tr><td>LDraw 323</td><td>53 studs</td></tr><tr><td>LDraw 378</td><td>16 studs</td></tr><tr><td>LDraw 15</td><td>13 studs</td></tr><tr><td>LDraw 330</td><td>7 studs</td></tr><tr><td>LDraw 10</td><td>6 studs</td></tr><tr><td>LDraw 379</td><td>2 studs</td></tr><tr><td>LDraw 19</td><td>1 studs</td></tr><tr><td>LDraw 80</td><td>1 studs</td></tr></table></details>
+<h2>Sources</h2><table><tr><th>role</th><th>provider / dataset</th><th>date</th><th>license · attribution</th></tr>
+<tr><td>elevation</td><td>USGS 3DEP<br><span class='muted'>3DEPElevation (Bare Earth DEM Dynamic)</span></td><td>None</td><td>Public domain<br>USGS 3D Elevation Program (3DEP)</td></tr>
+<tr><td>imagery</td><td>USGS The National Map<br><span class='muted'>USGSNAIPPlus (NAIP, latest mosaic)</span></td><td>2023-10-07</td><td>Public domain<br>USDA FSA NAIP via USGS The National Map</td></tr>
+</table>
+<h2>Validation</h2><table>
+<tr><td class='ok'>PASS</td><td>coverage_complete</td><td class='muted'>non-finite DEM px: 0; non-finite imagery px: 0</td></tr>
+<tr><td class='ok'>PASS</td><td>dem_imagery_aligned</td><td class='muted'>2 grids share bounds EPSG:26910; max extent mismatch 0.000 m</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_elevation</td><td class='muted'>65536 studs</td></tr>
+<tr><td class='ok'>PASS</td><td>every_stud_has_allowed_color</td><td class='muted'>all colors in catalog</td></tr>
+<tr><td class='ok'>PASS</td><td>no_terrain_below_datum</td><td class='muted'>min plates per exaggeration: {&#x27;x4.0&#x27;: 0}</td></tr>
+<tr><td class='ok'>PASS</td><td>quant_error_within_half_plate</td><td class='muted'>max |error| plates: {&#x27;x4.0&#x27;: 0.5}</td></tr>
+<tr><td class='ok'>PASS</td><td>catalog_colors_currently_produced</td><td class='muted'>16 colors used; not currently produced: []</td></tr>
+<tr><td class='ok'>PASS</td><td>terrain_colors_plate_buildable</td><td class='muted'>every used color is produced as a 1x1 plate</td></tr>
+<tr><td class='bad'>FAIL</td><td>summit_position</td><td class='muted'>DEM max in stud (249, 211); highest stud (253, 215); offset 4 stud(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>exaggeration_invariance</td><td class='muted'>1 exaggerations share footprint [(256, 256)] and one color array per color setting (colors are computed independently of exaggeration)</td></tr>
+<tr><td class='ok'>PASS</td><td>viewer_written</td><td class='muted'>1 whole-mountain 3D viewer(s)</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_valid:x4.0_naip_average_diffusion0.10</td><td class='muted'>142290 elements checked</td></tr>
+<tr><td class='ok'>PASS</td><td>ldraw_seams:x4.0_naip_average_diffusion0.10</td><td class='muted'>module files together equal the full model</td></tr>
+</table>
+<details><summary>manifest.json</summary><pre>{
+ &quot;schemaVersion&quot;: 1,
+ &quot;runId&quot;: &quot;seattle-20261001T191413&quot;,
+ &quot;status&quot;: &quot;failed&quot;,
+ &quot;generatorVersion&quot;: &quot;0.1.0+3c1a604-dirty&quot;,
+ &quot;createdAt&quot;: &quot;2026-10-01T19:14:17+00:00&quot;,
+ &quot;preset&quot;: {
+  &quot;id&quot;: &quot;seattle&quot;,
+  &quot;name&quot;: &quot;Seattle&quot;,
+  &quot;center&quot;: {
+   &quot;lat&quot;: 47.6062,
+   &quot;lon&quot;: -122.3321
+  },
+  &quot;boundingBox&quot;: {
+   &quot;widthKm&quot;: 24,
+   &quot;heightKm&quot;: 24
+  },
+  &quot;targetStudWidth&quot;: 256,
+  &quot;moduleStudSize&quot;: 64,
+  &quot;surfaceResolutionStuds&quot;: 1,
+  &quot;verticalExaggeration&quot;: 4,
+  &quot;datumMode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;viewpoints&quot;: [
+   {
+    &quot;name&quot;: &quot;Kerry Park&quot;,
+    &quot;bearingDeg&quot;: 321,
+    &quot;elevationDeg&quot;: 10
+   },
+   {
+    &quot;name&quot;: &quot;Alki Beach&quot;,
+    &quot;bearingDeg&quot;: 243,
+    &quot;elevationDeg&quot;: 6
+   },
+   {
+    &quot;name&quot;: &quot;Bainbridge Ferry&quot;,
+    &quot;bearingDeg&quot;: 265,
+    &quot;elevationDeg&quot;: 5
+   },
+   {
+    &quot;name&quot;: &quot;Gas Works Park&quot;,
+    &quot;bearingDeg&quot;: 358,
+    &quot;elevationDeg&quot;: 8
+   }
+  ]
+ },
+ &quot;bounds&quot;: {
+  &quot;crs&quot;: &quot;EPSG:26910&quot;,
+  &quot;minE&quot;: 538200.0,
+  &quot;minN&quot;: 5260749.0,
+  &quot;maxE&quot;: 562200.0,
+  &quot;maxN&quot;: 5284749.0,
+  &quot;metersPerStud&quot;: 93.75,
+  &quot;studWidth&quot;: 256,
+  &quot;studHeight&quot;: 256
+ },
+ &quot;scale&quot;: {
+  &quot;metersPerPlateTrueScale&quot;: 37.5,
+  &quot;exaggerations&quot;: [
+   4
+  ]
+ },
+ &quot;datum&quot;: {
+  &quot;mode&quot;: &quot;surrounding-minimum&quot;,
+  &quot;elevationM&quot;: -0.7376174926757812,
+  &quot;rawDemMinM&quot;: -1.9499521255493164
+ },
+ &quot;sources&quot;: [
+  {
+   &quot;role&quot;: &quot;elevation&quot;,
+   &quot;provider&quot;: &quot;USGS 3DEP&quot;,
+   &quot;dataset&quot;: &quot;3DEPElevation (Bare Earth DEM Dynamic)&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage&quot;
+   ],
+   &quot;itemIds&quot;: [],
+   &quot;acquisitionDate&quot;: null,
+   &quot;nativeResolutionM&quot;: 1.0,
+   &quot;analysisGridPx&quot;: 2560,
+   &quot;nativeCrs&quot;: &quot;EPSG:26910&quot;,
+   &quot;license&quot;: &quot;Public domain&quot;,
+   &quot;attribution&quot;: &quot;USGS 3D Elevation Program (3DEP)&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;9889f7b90bafc3f5189693c9949289c7b51e08aa2815f44e675617193a6477bb&quot;,
+    &quot;c3168a100f79222ff025675473913c7520d4ec8f75f2976849f51c6b76f4e1b9&quot;,
+    &quot;7d7df61bf7c64eee592f944f9a77f595fe005e6633f1b621e21c30bb9bb3443c&quot;,
+    &quot;eb7a0dff772970f7fc563ae9823efb730c30fb70f477579903e70d12e2105520&quot;,
+    &quot;748c942e3348b978f866e720deb72ebedc6b2a13db7289320cec0f83582f8497&quot;,
+    &quot;b28a1534e3fb547c981a62b9b8f1d05834d0db3c7f71c83ef61749daf3f4e12a&quot;,
+    &quot;d0f652f1ec477375d699f47c41636afdf974f4493a72f76deed2bb968e0441ab&quot;,
+    &quot;564e7129827a3a1ebb7047c3902fd3184c5dff0ffdcb411406ac42c633ee9b09&quot;,
+    &quot;d97ea7242a2f26454fa03a3e5752ee230f721bc0024a2fa823dc4a633f20fef4&quot;,
+    &quot;d262ac344fdaaed7ad8df0cb37a751f682fd3f28d3cdeaba9f01466d7224a403&quot;,
+    &quot;d952484247dccdb7905d498cce138ae100c59f8ad30a9ff983a4a753babc8385&quot;,
+    &quot;ea3ed7cef3db593d48a13b3b5cfda3168baa5ba85ad8ca5924f5963c93488b9f&quot;,
+    &quot;f648dfb6b0693e566a408ef8e56317885b3c3bd9530c345b4b1a25804a858c00&quot;,
+    &quot;df801481e0d999122cf6d4d49d1b2432c52b841b7e2901c3191020d1c8d84425&quot;,
+    &quot;81f238981791e15329c9c6ce39491e6536f43d71a11cd3cf64528d1a379ca090&quot;,
+    &quot;69cb9dbfc8ad7e0c8e483206aaff443cbf2c0ea84542b2f6c7852c424e65fb7b&quot;
+   ]
+  },
+  {
+   &quot;role&quot;: &quot;imagery&quot;,
+   &quot;provider&quot;: &quot;USGS The National Map&quot;,
+   &quot;dataset&quot;: &quot;USGSNAIPPlus (NAIP, latest mosaic)&quot;,
+   &quot;sourceUrls&quot;: [
+    &quot;https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage&quot;
+   ],
+   &quot;itemIds&quot;: [
+    &quot;wa_m_4712221_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712221_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712221_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712221_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712222_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712222_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712222_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712222_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712223_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712223_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712223_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712223_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712229_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712229_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712229_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712229_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712230_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712230_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712230_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712230_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712231_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712231_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712231_se_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712231_sw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712237_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712237_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712238_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712238_nw_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712239_ne_10_060_20231007_20240209&quot;,
+    &quot;wa_m_4712239_nw_10_060_20231007_20240209&quot;
+   ],
+   &quot;acquisitionDate&quot;: &quot;2023-10-07&quot;,
+   &quot;nativeResolutionM&quot;: 0.6,
+   &quot;analysisGridPx&quot;: 3840,
+   &quot;nativeCrs&quot;: &quot;EPSG:26910&quot;,
+   &quot;license&quot;: &quot;Public domain&quot;,
+   &quot;attribution&quot;: &quot;USDA FSA NAIP via USGS The National Map&quot;,
+   &quot;cacheKeys&quot;: [
+    &quot;4f2c45e78ed7f2c21ef302d5e4eadcb2dd0c52812cf1b8774ce525f763127a27&quot;,
+    &quot;1ddd14ece700d87aaa142903532702f1582a02497d8cd7b475bf93fae778a50e&quot;,
+    &quot;4bf12488ae374bb6642624ebacb42ff2d717127f7538aa26a3f35e85ebfacb2e&quot;,
+    &quot;64209d910dea60161b4c28a5dd4bc2547b6f1a98096b5bfa05141e5cc129bad2&quot;,
+    &quot;8e80630afce096a4405c8e96328897e4b9c1d8894d7e9a9f12b36fdf61970697&quot;,
+    &quot;dca84be35869120f8d5cac37a95e47f6442049e1562d361f9c55435935b6770f&quot;,
+    &quot;d84954bebc17b226f0a3a582da19b6fe3afdfa41d2c4a828b6194459154cd208&quot;,
+    &quot;497b72b50a7f84d7e2a3c3d2e748531da15eb46b68779273738f199f1d790946&quot;,
+    &quot;d30164f39808cc264d2fa319df10ac2d82a1f3718e9ebfc9e3f9481d63ff03a4&quot;,
+    &quot;47170a0c8532614956d8423dd622d309e4887f648e8239fa54c2e2a64b69ef0b&quot;,
+    &quot;a125f6dccbcb6065d25ee953712aeae446acc2bbe3858c113d96f24848b72c4f&quot;,
+    &quot;e290d8a2d5651aaeac4087c52349f333b6b21ff2aa45b66430a313a1b0d024fe&quot;,
+    &quot;08edae0af47bd2fd114003b8c6dc2a0364b7573f1962bc1ea7cee54e4f680a6b&quot;,
+    &quot;cf803ef5c05ffd56e582a25fb6898fe72f7fa24aeae6d05324a01ddce9a0af07&quot;,
+    &quot;718717369a17e271d05855bac853ccb8e4c89c559383a5edb1b8892131ed2aba&quot;,
+    &quot;6985230ddad2a709c42d51de4966d18dce3f54c07c6b9337d8df5e4db4ed8ccb&quot;
+   ],
+   &quot;imageryKey&quot;: &quot;naip&quot;,
+   &quot;notes&quot;: [
+    &quot;acquisition date cross-referenced from Planetary Computer NAIP STAC (30 items, 2023-10-07..2023-10-07)&quot;
+   ]
+  }
+ ],
+ &quot;catalog&quot;: {
+  &quot;version&quot;: &quot;lego-1x1-2026-10-01&quot;,
+  &quot;sha256&quot;: &quot;313a874bc2e3b9a52333454ffbe36a7d309261fd5b5deb0fcd496c8ef2922d2d&quot;,
+  &quot;terrainPalette&quot;: {
+   &quot;rule&quot;: &quot;colors currently produced as 1x1 plate (3024)&quot;,
+   &quot;size&quot;: 47,
+   &quot;excluded&quot;: []
+  }
+ },
+ &quot;variants&quot;: [
+  {
+   &quot;key&quot;: &quot;x4.0_naip_average_diffusion0.10&quot;,
+   &quot;verticalExaggeration&quot;: 4,
+   &quot;color&quot;: {
+    &quot;imagerySource&quot;: &quot;naip&quot;,
+    &quot;imageryDate&quot;: null,
+    &quot;sampling&quot;: &quot;average&quot;,
+    &quot;assignment&quot;: &quot;diffusion&quot;,
+    &quot;diffusionStrength&quot;: 0.1
+   },
+   &quot;metrics&quot;: {
+    &quot;maxHeightPlates&quot;: 19,
+    &quot;maxHeightMm&quot;: 60.8,
+    &quot;colorDistribution&quot;: {
+     &quot;0&quot;: 26220,
+     &quot;2&quot;: 141,
+     &quot;10&quot;: 6,
+     &quot;15&quot;: 13,
+     &quot;19&quot;: 1,
+     &quot;28&quot;: 1341,
+     &quot;71&quot;: 1452,
+     &quot;72&quot;: 20180,
+     &quot;80&quot;: 1,
+     &quot;85&quot;: 283,
+     &quot;272&quot;: 3644,
+     &quot;288&quot;: 12176,
+     &quot;323&quot;: 53,
+     &quot;330&quot;: 7,
+     &quot;378&quot;: 16,
+     &quot;379&quot;: 2
+    }
+   }
+  }
+ ],
+ &quot;summary&quot;: {
+  &quot;geographicWidthM&quot;: 24000.0,
+  &quot;geographicHeightM&quot;: 24000.0,
+  &quot;physicalWidthMm&quot;: 2048.0,
+  &quot;physicalDepthMm&quot;: 2048.0,
+  &quot;summitStud&quot;: [
+   253,
+   215
+  ],
+  &quot;summitElevationM&quot;: 172.74323852539064,
+  &quot;summitSourceElevationM&quot;: 176.57554626464844,
+  &quot;reliefM&quot;: 173.48085601806642
+ },
+ &quot;outputs&quot;: {
+  &quot;canonical&quot;: {
+   &quot;path&quot;: &quot;canonical.npz&quot;,
+   &quot;sha256&quot;: &quot;a6212181dfb08b0e059ddba1122bce42fee7f38bcf97e6b311ed2434f031df60&quot;
+  },
+  &quot;preview:height-x4.0&quot;: {
+   &quot;path&quot;: &quot;previews/height-x4.0.png&quot;,
+   &quot;sha256&quot;: &quot;64e5945130ce58cb1522f87e276234fa35d0c370bb40fdce9fd45a184928e9e7&quot;
+  },
+  &quot;preview:color-naip_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;previews/color-naip_average_diffusion0.10.png&quot;,
+   &quot;sha256&quot;: &quot;86ec026dee7321842b5a0a290ec0c7fbab04c74248d571e64570a411d9ac9acb&quot;
+  },
+  &quot;preview:imagery-naip&quot;: {
+   &quot;path&quot;: &quot;previews/imagery-naip.png&quot;,
+   &quot;sha256&quot;: &quot;da2f30cbaefee89d535787e47e4fa16c629c013c855897fd952cb66104e457f5&quot;
+  },
+  &quot;viewer:x4.0_naip_average_diffusion0.10&quot;: {
+   &quot;path&quot;: &quot;viewer/x4.0_naip_average_diffusion0.10.html&quot;,
+   &quot;sha256&quot;: &quot;872d08d4ccf860dd542a3d121ada35e1ae53b191ffeebe2954a25b4c3c0ad49e&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_A1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_A1.ldr&quot;,
+   &quot;sha256&quot;: &quot;328c7560844aa66cbb6aa1db9b66479dafce62b254c6efa0d7cad9fdc9671ae4&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_A2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_A2.ldr&quot;,
+   &quot;sha256&quot;: &quot;3a8c0c5a941d627ccb58304efb166e49396fbc149c1581e1fab466345499d0f4&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_A3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_A3.ldr&quot;,
+   &quot;sha256&quot;: &quot;b8c8d58b191760b75b47823cf50140f72afd3d7d834c25fc07536a10d1d1b85a&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_A4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_A4.ldr&quot;,
+   &quot;sha256&quot;: &quot;affbada2ef6c373d4b5f64ae84b1841cf1f0ffeb638c50675f93cb608583d5cf&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_B1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_B1.ldr&quot;,
+   &quot;sha256&quot;: &quot;47bd898b25238f8ccfb5ebbda72cab5d33974c78b4af3eba99e379f7407fa02f&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_B2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_B2.ldr&quot;,
+   &quot;sha256&quot;: &quot;c60294b9a98ce615b96a2a3d908ca70b82017184e772529920cae629ae2de0d6&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_B3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_B3.ldr&quot;,
+   &quot;sha256&quot;: &quot;5cf814508c7a0068758c752355c68d69a5238047897aca28244f3cb2646bfd09&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_B4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_B4.ldr&quot;,
+   &quot;sha256&quot;: &quot;c08c2f21622ede4cdb5236561b8cc632e586e8b2f34b0a1da8fbc5cc6300efbc&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_C1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_C1.ldr&quot;,
+   &quot;sha256&quot;: &quot;a7ca568e22d3229e76b55daba9ac1db76cd71242f9442fd2184f7c6e7476a17f&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_C2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_C2.ldr&quot;,
+   &quot;sha256&quot;: &quot;f06767119555ff92140eb994e8b3af3303c190b850940b581f4c9d075b02e114&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_C3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_C3.ldr&quot;,
+   &quot;sha256&quot;: &quot;ec8688e33d1793a0e0762cab8dc8f5b3076f915344102e4a9e87e700aef741b9&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_C4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_C4.ldr&quot;,
+   &quot;sha256&quot;: &quot;d58ff7aed1afce8514cfbeb5ee4b346d5430076e5a50eb9ddef8711749d02dd3&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_D1&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_D1.ldr&quot;,
+   &quot;sha256&quot;: &quot;90ffacb3526c85dec6b53b1e752420a5e249619f5fa709c5aeea1754b9ac424b&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_D2&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_D2.ldr&quot;,
+   &quot;sha256&quot;: &quot;0794d3421559bf31213c1b04f1469a69dd58b967823b273533d7889358bf7ece&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_D3&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_D3.ldr&quot;,
+   &quot;sha256&quot;: &quot;7dce2249a1fb795e724a9b50c6a5fb7bdcded3e8dcf0d56aae6e01f06799b34c&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:Module_D4&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Module_D4.ldr&quot;,
+   &quot;sha256&quot;: &quot;b72214c2173d9a1c22d5923505219deb8d34b0b85e2b6291ab254aeeca81966b&quot;
+  },
+  &quot;ldraw:x4.0_naip_average_diffusion0.10:full&quot;: {
+   &quot;path&quot;: &quot;ldraw/x4.0_naip_average_diffusion0.10/Seattle.mpd&quot;,
+   &quot;sha256&quot;: &quot;21a10cebe8b0c290162ca6f215a3ebc1e468f16762534823570aa5dd2f0a1175&quot;
+  }
+ },
+ &quot;validation&quot;: [
+  {
+   &quot;check&quot;: &quot;coverage_complete&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;non-finite DEM px: 0; non-finite imagery px: 0&quot;
+  },
+  {
+   &quot;check&quot;: &quot;dem_imagery_aligned&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;2 grids share bounds EPSG:26910; max extent mismatch 0.000 m&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_elevation&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;65536 studs&quot;
+  },
+  {
+   &quot;check&quot;: &quot;every_stud_has_allowed_color&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;all colors in catalog&quot;
+  },
+  {
+   &quot;check&quot;: &quot;no_terrain_below_datum&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;min plates per exaggeration: {&#x27;x4.0&#x27;: 0}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;quant_error_within_half_plate&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;max |error| plates: {&#x27;x4.0&#x27;: 0.5}&quot;
+  },
+  {
+   &quot;check&quot;: &quot;catalog_colors_currently_produced&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;16 colors used; not currently produced: []&quot;
+  },
+  {
+   &quot;check&quot;: &quot;terrain_colors_plate_buildable&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;every used color is produced as a 1x1 plate&quot;
+  },
+  {
+   &quot;check&quot;: &quot;summit_position&quot;,
+   &quot;passed&quot;: false,
+   &quot;detail&quot;: &quot;DEM max in stud (249, 211); highest stud (253, 215); offset 4 stud(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;exaggeration_invariance&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 exaggerations share footprint [(256, 256)] and one color array per color setting (colors are computed independently of exaggeration)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;viewer_written&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;1 whole-mountain 3D viewer(s)&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_valid:x4.0_naip_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;142290 elements checked&quot;
+  },
+  {
+   &quot;check&quot;: &quot;ldraw_seams:x4.0_naip_average_diffusion0.10&quot;,
+   &quot;passed&quot;: true,
+   &quot;detail&quot;: &quot;module files together equal the full model&quot;
+  }
+ ],
+ &quot;exportMode&quot;: &quot;both&quot;,
+ &quot;ldrawCounts&quot;: {
+  &quot;x4.0_naip_average_diffusion0.10&quot;: {
+   &quot;Module_A1&quot;: 4115,
+   &quot;Module_A2&quot;: 4149,
+   &quot;Module_A3&quot;: 4105,
+   &quot;Module_A4&quot;: 4235,
+   &quot;Module_B1&quot;: 4421,
+   &quot;Module_B2&quot;: 4465,
+   &quot;Module_B3&quot;: 4400,
+   &quot;Module_B4&quot;: 4582,
+   &quot;Module_C1&quot;: 4454,
+   &quot;Module_C2&quot;: 4381,
+   &quot;Module_C3&quot;: 4437,
+   &quot;Module_C4&quot;: 4576,
+   &quot;Module_D1&quot;: 4619,
+   &quot;Module_D2&quot;: 4583,
+   &quot;Module_D3&quot;: 4689,
+   &quot;Module_D4&quot;: 4934,
+   &quot;Seattle&quot;: 71145
+  }
+ }
+}</pre></details>
+</body></html>
