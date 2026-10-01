@@ -12,6 +12,6 @@ For my next massive build, I am considering rendering Mount Rainier in LEGO. Tow
 - [Mount St. Helens](/mount-st-helens/viewer.html)
 - [Mount Baker](/mount-baker/viewer.html)
 
-<iframe src="/mount-rainier/viewer.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
-<iframe src="/mount-st-helens/viewer.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
-<iframe src="/mount-baker/viewer.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
+<iframe src="/mount-rainier/index.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
+<iframe src="/mount-st-helens/index.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
+<iframe src="/mount-baker/index.html" style="width:100%;height:80vh;border:0" allowfullscreen></iframe>
