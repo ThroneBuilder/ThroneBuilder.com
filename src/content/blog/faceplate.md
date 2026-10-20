@@ -1,12 +1,12 @@
 ---
-title: "Faceplate.me"
+title: "LEGO Faceplate Designer"
 pubDate: 2026-05-30
 description: "Website to design faceplates for the Hall of Faces"
 tags: ["legos","coding"]
 coverImage: "/images/Faceplate.png"
 ---
 
-[Faceplate.me](https://faceplate.me/) combines my passions of coding and Legos to automate and crowdsource the creation of the Hall of Faces.
+[LEGO Faceplate Designer](https://faceplate.thronebuilder.com/) combines my passions of coding and Legos to automate and crowdsource the creation of the Hall of Faces.
 
 Live site has implemented these features:
 1. Basic workflow from upload through mosaic algorithm
